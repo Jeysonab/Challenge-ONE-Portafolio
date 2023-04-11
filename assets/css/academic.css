@@ -1,0 +1,92 @@
+.academic {
+	background-color: #001d3d;
+	border-top: 2rem solid #000814;
+	display: flex;
+	height: auto;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.academic__title {
+	color: #ee6c4d;
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin: 6rem 0 2rem 0;
+}
+
+.academic__courses {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
+	align-items: flex-start;
+	width: 70%;
+	margin-bottom: 6rem;
+}
+
+.academic__courses__box {
+	display: flex;
+	background-color: #000814;
+	border-radius: 10px;
+	box-shadow: 0 0.5rem 1rem rgba(238, 108, 77, 0.2);
+	color: #ee6c4d;
+	margin: 1rem;
+	padding: 1rem;
+	transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out,
+		box-shadow 0.3s ease-in-out, opacity 0.5s ease-in-out;
+	width: 15rem;
+	height: 20rem;
+	opacity: 0.6;
+}
+
+.academic__courses__box:hover {
+	transform: translateY(-10px);
+	opacity: 1;
+	box-shadow: 0 1rem 2rem rgba(238, 108, 77, 0.4);
+	background-color: #ee6c4d;
+	color: #e0fbfc;
+}
+
+.academic__courses__list {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-direction: column;
+}
+
+.academic__courses__item__img img {
+	width: 100%;
+}
+
+.academic__courses__item__title {
+	font-size: 1.2rem;
+	font-weight: 500;
+	margin: 0.5rem 0;
+	text-align: center;
+}
+
+.academic__courses__item__subtitle {
+	font-size: 1rem;
+	margin: 0.5rem 0;
+}
+
+/* Media queries para tablets */
+
+@media screen and (max-width: 820px) {
+	.academic__courses {
+		width: 90%;
+	}
+}
+
+/* Media queries para dispositivos móviles */
+
+@media screen and (max-width: 600px) {
+	.academic__title {
+		font-size: 2rem;
+	}
+
+	.academic__courses {
+		width: 100%;
+	}
+}

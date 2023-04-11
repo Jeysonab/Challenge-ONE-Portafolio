@@ -1,0 +1,21 @@
+.footer {
+	background-color: #000814;
+	color: #e0fbfc;
+	text-align: center;
+	padding: 20px;
+}
+
+.footer__rodape {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.footer__rodape p {
+	margin: 5px 0;
+}
+
+.fa-github {
+	color: #ee6c4d;
+	margin-right: 5px;
+}
